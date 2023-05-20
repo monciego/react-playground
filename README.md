@@ -7,3 +7,4 @@ Topics that covered in this
 - Component
 - Props
 - Conditional Rendering
+- Composition
