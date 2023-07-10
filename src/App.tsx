@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import Button from './components/button';
 import Card from './components/card';
 import { Counter } from './components/counter';
 import Modal from './components/modal';
 import Navbar from './components/navbar';
+import { Toggle } from './components/toggle';
 
-function App() {
+const App = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <>
       <Navbar />
@@ -30,12 +38,16 @@ function App() {
         </Card>
         <Button className='my-4'>Primary Button</Button>
         <Modal />
-        <div>
+        <div className='mb-4'>
           <Counter />
+        </div>
+        <div>
+          <Toggle toggle={toggle} handleToggle={handleToggle} />
+          {toggle && <div>Hello React</div>}
         </div>
       </main>
     </>
   );
-}
+};
 
 export default App;
