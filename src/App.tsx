@@ -1,5 +1,6 @@
 import Button from './components/button';
 import Card from './components/card';
+import Modal from './components/modal';
 import Navbar from './components/navbar';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           </div>
         </Card>
         <Button className='mt-4'>Primary Button</Button>
+        <Modal />
       </main>
     </>
   );
