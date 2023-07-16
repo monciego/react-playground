@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from './components/button';
 import Card from './components/card';
 import { Counter } from './components/counter';
@@ -6,8 +6,26 @@ import Modal from './components/modal';
 import Navbar from './components/navbar';
 import { Toggle } from './components/toggle';
 
+type Starwars = {
+  name?: string;
+  height?: string;
+  gender?: string;
+};
+
 const App = () => {
   const [toggle, setToggle] = useState(false);
+  const [starWarsData, setStarWarsData] = useState<Starwars>({});
+  const [count, setCount] = useState(1);
+
+  const handleClick = () => {
+    setCount((prev) => prev + 1);
+  };
+
+  useEffect(() => {
+    fetch(`https://swapi.dev/api/people/${count}`)
+      .then((res) => res.json())
+      .then((data) => setStarWarsData(data));
+  }, [count]);
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -45,6 +63,15 @@ const App = () => {
           <Toggle toggle={toggle} handleToggle={handleToggle} />
           {toggle && <div>Hello React</div>}
         </div>
+
+        <h2>The count is {count}</h2>
+        <Button onClick={handleClick}>Get next character</Button>
+        <Card>
+          <h2>{starWarsData.name}</h2>
+          <p>Height: {starWarsData.height}</p>
+          <p>Gender: {starWarsData.gender}</p>
+        </Card>
+        <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
       </main>
     </>
   );
