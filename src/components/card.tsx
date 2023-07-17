@@ -16,8 +16,7 @@ const Card = ({
   className,
 }: CardProps): JSX.Element => {
   return (
-    <a
-      href='#'
+    <div
       className={`block p-6 border rounded text-white shadow bg-gray-800 border-gray-700 hover:bg-gray-700 ${className}`}
     >
       {fallback && (
@@ -34,7 +33,7 @@ const Card = ({
         </>
       )}
       {children}
-    </a>
+    </div>
   );
 };
 
