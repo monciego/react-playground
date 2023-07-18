@@ -7,6 +7,7 @@ import Navbar from './components/navbar';
 import { Toggle } from './components/toggle';
 import { GithubUsers } from './components/github-users';
 import { WindowSize } from './components/window-size';
+import { UserForm } from './components/user-form';
 
 type Starwars = {
   name?: string;
@@ -80,6 +81,9 @@ const App = () => {
           <p>Gender: {starWarsData.gender}</p>
         </Card>
         <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
+        <div>
+          <UserForm />
+        </div>
       </main>
     </>
   );
