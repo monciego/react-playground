@@ -6,6 +6,7 @@ import Modal from './components/modal';
 import Navbar from './components/navbar';
 import { Toggle } from './components/toggle';
 import { GithubUsers } from './components/github-users';
+import { WindowSize } from './components/window-size';
 
 type Starwars = {
   name?: string;
@@ -57,6 +58,9 @@ const App = () => {
         </Card>
         <div className='grid grid-cols-1 gap-2 mt-4 sm:grid-cols-2 lg:grid-cols-4'>
           <GithubUsers />
+        </div>
+        <div>
+          <WindowSize />
         </div>
         <Button className='my-4'>Primary Button</Button>
         <Modal />
