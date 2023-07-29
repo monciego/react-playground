@@ -8,6 +8,7 @@ import { Toggle } from './components/toggle';
 import { GithubUsers } from './components/github-users';
 import { WindowSize } from './components/window-size';
 import { UserForm } from './components/user-form';
+import { ComplexForm } from './components/complex-form';
 
 type Starwars = {
   name?: string;
@@ -38,6 +39,9 @@ const App = () => {
     <>
       <Navbar />
       <main className='px-4 md:px-6 py-6'>
+        <div className='mb-4'>
+          <ComplexForm />
+        </div>
         <Card
           fallback={true}
           title='React Playground'
@@ -72,7 +76,6 @@ const App = () => {
           <Toggle toggle={toggle} handleToggle={handleToggle} />
           {toggle && <div>Hello React</div>}
         </div>
-
         <h2>The count is {count}</h2>
         <Button onClick={handleClick}>Get next character</Button>
         <Card>
