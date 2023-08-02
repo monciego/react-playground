@@ -11,6 +11,7 @@ import { UserForm } from './components/user-form';
 import { ComplexForm } from './components/complex-form';
 import ComponentLifeCycle from './components/component-life-cycle';
 import { List } from './components/rendering-list';
+import { UseRefInput } from './components/inputUseRef';
 
 type Starwars = {
   name?: string;
@@ -41,6 +42,10 @@ const App = () => {
     <>
       <Navbar />
       <main className='px-4 md:px-6 py-6'>
+        <div className='mb-4'>
+          <UseRefInput />
+        </div>
+
         <div className='mb-4'>
           <List />
         </div>
