@@ -6,8 +6,6 @@ type CardProps = {
   fallback?: boolean;
 };
 
-/* TODO: Add a variant in this card (it can be an `a tag` or a `div`) */
-
 const Card = ({
   title,
   description,
@@ -17,7 +15,7 @@ const Card = ({
 }: CardProps): JSX.Element => {
   return (
     <div
-      className={`block p-6 border rounded text-white shadow bg-gray-800 border-gray-700 hover:bg-gray-700 ${className}`}
+      className={`block p-6 border rounded  shadow text-[#fff] bg-[#131313] border-gray-700  transition-all ${className}`}
     >
       {fallback && (
         <>

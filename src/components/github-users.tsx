@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Card from './card';
+import FlexContainer from './flex-container';
 
 const url = 'https://api.github.com/users';
 
@@ -45,29 +46,28 @@ export const GithubUsers = (): JSX.Element => {
   }
 
   return (
-    <>
-      {users.map((user) => {
-        return (
-          <a key={user.id} target='__blank' href={user.html_url}>
-            <Card>
-              <div className='flex gap-4'>
-                <img
-                  className='rounded-full h-10 w-10'
-                  src={user.avatar_url}
-                  alt={user.login}
-                />
-                <div>
-                  <h2 className='text-lg'>{user.login}</h2>
-                  <p className='text-gray-300'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Expedita, inventore?
-                  </p>
+    <FlexContainer>
+      <div className='grid w-full mb-16 grid-cols-1 gap-2 mt-4 sm:grid-cols-2 lg:grid-cols-3'>
+        {users.map((user) => {
+          return (
+            <a key={user.id} target='__blank' href={user.html_url}>
+              <Card>
+                <div className='flex gap-4'>
+                  <img
+                    className='rounded-full h-10 w-10'
+                    src={user.avatar_url}
+                    alt={user.login}
+                  />
+                  <div>
+                    <h2 className='text-lg'>{user.login}</h2>
+                    <p className='text-gray-300'>@{user.html_url}</p>
+                  </div>
                 </div>
-              </div>
-            </Card>
-          </a>
-        );
-      })}
-    </>
+              </Card>
+            </a>
+          );
+        })}
+      </div>
+    </FlexContainer>
   );
 };
