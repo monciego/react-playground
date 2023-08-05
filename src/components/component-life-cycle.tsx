@@ -9,12 +9,13 @@ Every React component goes through the same lifecycle:
 
 import { useState } from 'react';
 import { ChatRoom } from './chat-room/chat-room';
+import FlexContainer from './flex-container';
 
-const ComponentLifeCycle = (): JSX.Element => {
+export const ComponentLifeCycle = (): JSX.Element => {
   const [roomId, setRoomId] = useState('General');
 
   return (
-    <div>
+    <FlexContainer className='flex-col mt-16'>
       <label>
         Choose the chat room:
         <select
@@ -29,8 +30,6 @@ const ComponentLifeCycle = (): JSX.Element => {
       </label>
       <hr />
       <ChatRoom roomId={roomId} />
-    </div>
+    </FlexContainer>
   );
 };
-
-export default ComponentLifeCycle;

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { createConnection } from './chat';
+import FlexContainer from '../flex-container';
 
 const serverUrl = 'https://localhost:1234';
 
@@ -13,8 +14,8 @@ export const ChatRoom = ({ roomId }: { roomId: string }): JSX.Element => {
   }, [roomId]);
 
   return (
-    <div>
+    <FlexContainer>
       <h1>Welcome to the {roomId} room!</h1>
-    </div>
+    </FlexContainer>
   );
 };
