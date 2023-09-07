@@ -1,19 +1,19 @@
-import { Counter } from './components/counter';
-import { GithubUsers } from './components/github-users';
-import { WindowSize } from './components/window-size';
-import { UserForm } from './components/user-form';
-import { ComplexForm } from './components/complex-form';
-import { ComponentLifeCycle } from './components/component-life-cycle';
-import { List } from './components/rendering-list';
+import { Counter } from './pages/projects/counter';
+import { GithubUsers } from './pages/projects/github-users';
+import { WindowSize } from './pages/projects/window-size';
+import { UserForm } from './pages/projects/user-form';
+import { ComplexForm } from './pages/projects/complex-form';
+import { ComponentLifeCycle } from './pages/projects/component-life-cycle';
+import { List } from './pages/projects/rendering-list';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/layout';
 import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Projects } from './pages/projects/projects';
 import { UseRefInput } from './pages/projects/inputUseRef';
-import { Composition } from './components/composition';
-import { ConditionalRendering } from './components/conditional-rendering-';
-import { Starwars } from './components/starwars';
+import { Composition } from './pages/projects/composition';
+import { ConditionalRendering } from './pages/projects/conditional-rendering-';
+import { Starwars } from './pages/projects/starwars';
 
 const App = () => {
   return (

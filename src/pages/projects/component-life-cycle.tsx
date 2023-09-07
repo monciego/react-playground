@@ -9,7 +9,7 @@ Every React component goes through the same lifecycle:
 
 import { useState } from 'react';
 import { ChatRoom } from './chat-room/chat-room';
-import FlexContainer from './flex-container';
+import FlexContainer from '../../components/flex-container';
 
 export const ComponentLifeCycle = (): JSX.Element => {
   const [roomId, setRoomId] = useState('General');

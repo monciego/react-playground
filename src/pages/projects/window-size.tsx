@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Button from './button';
+import Button from '../../components/button';
 
 export const WindowSize = (): JSX.Element => {
   const [toggle, setToggle] = useState(false);

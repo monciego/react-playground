@@ -1,6 +1,6 @@
-import { people } from '../data';
-import { getImageUrl } from '../utils/getImage';
-import Card from './card';
+import { people } from '../../data';
+import { getImageUrl } from '../../utils/getImage';
+import Card from '../../components/card';
 
 export const List = (): JSX.Element => {
   return (

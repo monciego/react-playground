@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { createConnection } from './chat';
-import FlexContainer from '../flex-container';
+import FlexContainer from '../../../components/flex-container';
 
 const serverUrl = 'https://localhost:1234';
 

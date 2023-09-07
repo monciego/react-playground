@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Card from './card';
-import FlexContainer from './flex-container';
+import Card from '../../components/card';
+import FlexContainer from '../../components/flex-container';
 
 const url = 'https://api.github.com/users';
 
