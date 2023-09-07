@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import FlexContainer from './flex-container';
-import Button from './button';
-import Card from './card';
+import FlexContainer from '../../components/flex-container';
+import Button from '../../components/button';
+import Card from '../../components/card';
 
 type TStarwars = {
   name?: string;

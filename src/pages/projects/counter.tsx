@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Card from './card';
-import Button from './button';
-import FlexContainer from './flex-container';
+import Card from '../../components/card';
+import Button from '../../components/button';
+import FlexContainer from '../../components/flex-container';
 
 export const Counter = (): JSX.Element => {
   const [count, setCount] = useState(0);

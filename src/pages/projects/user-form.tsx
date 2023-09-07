@@ -1,5 +1,5 @@
 import { SyntheticEvent, useState } from 'react';
-import Card from './card';
+import Card from '../../components/card';
 
 type TUsers = {
   id: string;
