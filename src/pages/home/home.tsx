@@ -5,17 +5,17 @@ export const Home = (): JSX.Element => {
   return (
     <main className='flex mt-20 items-center flex-col justify-center'>
       <div className='relative'>
-        <h1 className='text-7xl font-syncopate uppercase text-center'>
+        <h1 className='text-4xl sm:text-5xl md:text-7xl font-syncopate uppercase text-center'>
           The react <br /> playground
         </h1>
         <img
-          className='absolute -top-16  -right-6'
+          className='absolute -top-8 -right-4 sm:-top-16  sm:-right-6 h-14 sm:h-auto'
           src={bytesReact}
           alt={`React bytes logo`}
         />
       </div>
 
-      <p className='max-w-2xl mt-2 mb-6 text-center text-2xl'>
+      <p className='w-full sm:max-w-2xl mt-2 mb-6 text-center text-lg  px-4 md:text-2xl'>
         React Playground is a collection of projects and experiments aimed at
         exploring and mastering React.js.
       </p>
