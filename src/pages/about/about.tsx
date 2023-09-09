@@ -1,6 +1,6 @@
 export const About = (): JSX.Element => {
   return (
-    <div className='text-xl text-[#e3e0d1] px-24 pb-24 mt-4 mx-auto'>
+    <div className='text-base sm:text-xl text-[#e3e0d1] px-4 sm:px-10 md:px-16   pb-24 mt-4 mx-auto'>
       <p className='mb-4'>
         Welcome to my React Playground, a whimsical and delightful realm where
         my learning journey with React.js unfolds through a diverse collection
@@ -20,7 +20,7 @@ export const About = (): JSX.Element => {
         and growth for all!"
       </p>
 
-      <p className='mt-4 text-lg'>
+      <p className='mt-4  sm:text-lg'>
         "Special thanks to ChatGPT for providing the delightful description of
         my React Playground, crafted with the magic of language AI."🚀
       </p>
