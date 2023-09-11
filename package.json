@@ -2,6 +2,7 @@
   "name": "react-playground",
   "private": true,
   "version": "0.0.0",
+  "module": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
