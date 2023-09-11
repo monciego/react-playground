@@ -38,11 +38,11 @@ export const GithubUsers = (): JSX.Element => {
   }, []);
 
   if (loading) {
-    return <h1 className='text-2xl'>Loading...</h1>;
+    return <h1 className='text-2xl text-center'>Loading...</h1>;
   }
 
   if (error) {
-    return <h1 className='text-2xl'>Something is wrong!</h1>;
+    return <h1 className='text-2xl text-center'>Something is wrong!</h1>;
   }
 
   return (
