@@ -20,7 +20,7 @@ export const Home = (): JSX.Element => {
         exploring and mastering React.js.
       </p>
       <Link
-        className='uppercase w-72 text-2xl bg-[#FCBA28] hover:bg-[#ebab22] text-[#0F0D0E] px-4 py-2 rounded text-center font-bold inline-block'
+        className='uppercase w-52 sm:w-72 text-md sm:text-2xl bg-[#FCBA28] hover:bg-[#ebab22] text-[#0F0D0E] px-4 py-2 rounded text-center font-bold inline-block'
         to={`projects`}
       >
         explore
