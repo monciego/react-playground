@@ -37,11 +37,11 @@ export const ComplexForm = (): JSX.Element => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2 className='text-base font-semibold leading-7 text-gray-900'>
+    <form onSubmit={handleSubmit} className='px-4 pb-16'>
+      <h2 className='text-base font-semibold leading-7 text-white'>
         Personal Information
       </h2>
-      <p className='mt-1 text-sm leading-6 text-gray-600'>
+      <p className='mt-1 text-sm leading-6 text-gray-300'>
         Use a permanent address where you can receive mail.
       </p>
 
@@ -49,7 +49,7 @@ export const ComplexForm = (): JSX.Element => {
         <div className='sm:col-span-3'>
           <label
             htmlFor='first-name'
-            className='block text-sm font-medium leading-6 text-gray-900'
+            className='block text-sm font-medium leading-6 text-white'
           >
             First name
           </label>
@@ -60,7 +60,7 @@ export const ComplexForm = (): JSX.Element => {
               id='first-name'
               onChange={handleChange}
               value={formData.firstName}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             />
           </div>
         </div>
@@ -68,7 +68,7 @@ export const ComplexForm = (): JSX.Element => {
         <div className='sm:col-span-3'>
           <label
             htmlFor='last-name'
-            className='block text-sm font-medium leading-6 text-gray-900'
+            className='block text-sm font-medium leading-6 text-white'
           >
             Last name
           </label>
@@ -79,7 +79,7 @@ export const ComplexForm = (): JSX.Element => {
               id='last-name'
               onChange={handleChange}
               value={formData.lastName}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ export const ComplexForm = (): JSX.Element => {
         <div className='sm:col-span-3'>
           <label
             htmlFor='email'
-            className='block text-sm font-medium leading-6 text-gray-900'
+            className='block text-sm font-medium leading-6 text-white'
           >
             Email
           </label>
@@ -98,7 +98,7 @@ export const ComplexForm = (): JSX.Element => {
               id='email'
               onChange={handleChange}
               value={formData.email}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             />
           </div>
         </div>
@@ -106,7 +106,7 @@ export const ComplexForm = (): JSX.Element => {
         <div className='sm:col-span-3'>
           <label
             htmlFor='gender'
-            className='block text-sm font-medium leading-6 text-gray-900'
+            className='block text-sm font-medium leading-6 text-white'
           >
             Gender
           </label>
@@ -117,7 +117,7 @@ export const ComplexForm = (): JSX.Element => {
               autoComplete='gender'
               value={formData.gender}
               onChange={handleChange}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             >
               <option hidden value=''>
                 Gender
@@ -131,7 +131,7 @@ export const ComplexForm = (): JSX.Element => {
         <div className='sm:col-span-6'>
           <label
             htmlFor='comment'
-            className='block text-sm font-medium leading-6 text-gray-900'
+            className='block text-sm font-medium leading-6 text-white'
           >
             Comments
           </label>
@@ -139,7 +139,7 @@ export const ComplexForm = (): JSX.Element => {
             id='comment'
             name='comment'
             rows={3}
-            className='block mt-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+            className='block mt-2 w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             onChange={handleChange}
             value={formData.comment}
           />
@@ -147,10 +147,10 @@ export const ComplexForm = (): JSX.Element => {
       </div>
 
       <div className='border-b border-gray-900/10 pb-6'>
-        <h2 className='text-base font-semibold leading-7 text-gray-900'>
+        <h2 className='text-base font-semibold leading-7 text-white'>
           Notifications
         </h2>
-        <p className='mt-1 text-sm leading-6 text-gray-600'>
+        <p className='mt-1 text-sm leading-6 text-gray-400'>
           We'll always let you know about important changes, but you pick what
           else you want to hear about.
         </p>
@@ -167,13 +167,10 @@ export const ComplexForm = (): JSX.Element => {
             />
           </div>
           <div className='text-sm leading-6'>
-            <label
-              htmlFor='notify-comments'
-              className='font-medium text-gray-900'
-            >
+            <label htmlFor='notify-comments' className='font-medium text-white'>
               Comments
             </label>
-            <p className='text-gray-500'>
+            <p className='text-gray-400'>
               Get notified when someones posts a comment on a posting.
             </p>
           </div>
@@ -193,21 +190,21 @@ export const ComplexForm = (): JSX.Element => {
           <div className='text-sm leading-6'>
             <label
               htmlFor='notify-candidate'
-              className='font-medium text-gray-900'
+              className='font-medium text-white'
             >
               Candidates
             </label>
-            <p className='text-gray-500'>
+            <p className='text-gray-400'>
               Get notified when a candidate applies for a job.
             </p>
           </div>
         </div>
 
         <fieldset className='mt-6'>
-          <legend className='text-sm font-semibold leading-6 text-gray-900'>
+          <legend className='text-sm font-semibold leading-6 text-white'>
             Push Notifications
           </legend>
-          <p className='mt-1 text-sm leading-6 text-gray-600'>
+          <p className='mt-1 text-sm leading-6 text-gray-400'>
             These are delivered via SMS to your mobile phone.
           </p>
 
@@ -224,7 +221,7 @@ export const ComplexForm = (): JSX.Element => {
               />
               <label
                 htmlFor='push-everything'
-                className='block text-sm font-medium leading-6 text-gray-900'
+                className='block text-sm font-medium leading-6 text-white'
               >
                 Everything
               </label>
@@ -242,7 +239,7 @@ export const ComplexForm = (): JSX.Element => {
               />
               <label
                 htmlFor='push-email'
-                className='block text-sm font-medium leading-6 text-gray-900'
+                className='block text-sm font-medium leading-6 text-white'
               >
                 Same as email
               </label>
@@ -260,7 +257,7 @@ export const ComplexForm = (): JSX.Element => {
               />
               <label
                 htmlFor='push-nothing'
-                className='block text-sm font-medium leading-6 text-gray-900'
+                className='block text-sm font-medium leading-6 text-white'
               >
                 No push notifications
               </label>
@@ -272,7 +269,7 @@ export const ComplexForm = (): JSX.Element => {
       <div className='mt-6 flex items-center justify-end gap-x-6'>
         <button
           type='button'
-          className='text-sm font-semibold leading-6 text-gray-900'
+          className='text-sm font-semibold leading-6 text-white'
         >
           Cancel
         </button>
