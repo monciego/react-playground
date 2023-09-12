@@ -4,7 +4,7 @@ import FlexContainer from '../../../components/flex-container';
 import Loading from './loading';
 import ErrorText from './error';
 import Notes from '../../../components/notes';
-import Container from '../../../components/Container';
+import Container from '../../../components/container';
 
 const url = 'https://api.github.com/users';
 
