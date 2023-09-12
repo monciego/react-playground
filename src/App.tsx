@@ -12,7 +12,7 @@ import { About } from './pages/about/about';
 import { Projects } from './pages/projects/projects';
 import { UseRefInput } from './pages/projects/inputUseRef';
 import { Composition } from './pages/projects/composition';
-import { ConditionalRendering } from './pages/projects/conditional-rendering-';
+import { ConditionalRendering } from './pages/projects/modal/conditional-rendering-';
 import { Starwars } from './pages/projects/starwars';
 
 const App = () => {
