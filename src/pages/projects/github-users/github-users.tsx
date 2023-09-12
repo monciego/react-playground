@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import Card from '../../components/card';
-import FlexContainer from '../../components/flex-container';
+import Card from '../../../components/card';
+import FlexContainer from '../../../components/flex-container';
+import Loading from './loading';
+import ErrorText from './error';
 
 const url = 'https://api.github.com/users';
 
@@ -38,11 +40,11 @@ export const GithubUsers = (): JSX.Element => {
   }, []);
 
   if (loading) {
-    return <h1 className='text-2xl text-center'>Loading...</h1>;
+    return <Loading />;
   }
 
   if (error) {
-    return <h1 className='text-2xl text-center'>Something is wrong!</h1>;
+    return <ErrorText />;
   }
 
   return (

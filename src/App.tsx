@@ -1,5 +1,5 @@
 import { Counter } from './pages/projects/counter';
-import { GithubUsers } from './pages/projects/github-users';
+import { GithubUsers } from './pages/projects/github-users/github-users';
 import { WindowSize } from './pages/projects/window-size';
 import { UserForm } from './pages/projects/user-form';
 import { ComplexForm } from './pages/projects/complex-form';
