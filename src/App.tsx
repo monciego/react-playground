@@ -1,5 +1,5 @@
 import { Counter } from './pages/projects/counter';
-import { GithubUsers } from './pages/projects/github-users';
+import { GithubUsers } from './pages/projects/github-users/github-users';
 import { WindowSize } from './pages/projects/window-size';
 import { UserForm } from './pages/projects/user-form';
 import { ComplexForm } from './pages/projects/complex-form';
@@ -12,7 +12,7 @@ import { About } from './pages/about/about';
 import { Projects } from './pages/projects/projects';
 import { UseRefInput } from './pages/projects/inputUseRef';
 import { Composition } from './pages/projects/composition';
-import { ConditionalRendering } from './pages/projects/conditional-rendering-';
+import { ConditionalRendering } from './pages/projects/modal/conditional-rendering-';
 import { Starwars } from './pages/projects/starwars';
 
 const App = () => {
